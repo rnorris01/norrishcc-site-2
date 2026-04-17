@@ -10,57 +10,41 @@
   --navy:#081a31;
   --navy-2:#0b1f3a;
   --blue:#12325b;
-  --light:#f7f9fc;
+  --light:#f5f7fb;
   --light-blue:#eef4fb;
-  --text:#1a1a1a;
+  --text:#222;
 }
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
-.container{width:90%;max-width:1120px;margin:auto}
-header{background:linear-gradient(135deg,var(--navy),var(--navy-2),var(--blue));color:#fff;padding:30px 0 50px}
-.topline{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c6dbef;margin-bottom:12px}
-.brand{display:flex;align-items:center;gap:15px}
-.logo{height:65px}
-h1{margin:0;font-size:32px}
-.subtitle{color:#dbe8f5;margin-top:4px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:var(--text)}
+.container{width:90%;max-width:1100px;margin:auto}
+header{background:linear-gradient(135deg,#081a31,#0b1f3a);color:#fff;padding:40px 0}
+h1{margin:0;font-size:34px}
+h2{margin-bottom:10px;border-bottom:2px solid #0b1f3a;display:inline-block}
 .hero{display:grid;grid-template-columns:220px 1fr;gap:25px;margin-top:20px}
-.hero img{width:220px;height:220px;border-radius:14px;object-fit:cover}
-.case-box{background:rgba(255,255,255,.1);padding:14px;border-left:4px solid #fff;margin-bottom:12px}
-.metrics{display:flex;flex-wrap:wrap;gap:20px;margin-top:10px;font-size:13px;color:#e3edf7}
-.cta a{display:inline-block;margin-right:10px;margin-top:10px;padding:9px 15px;border-radius:6px;text-decoration:none;font-weight:600}
+.hero img{width:220px;border-radius:12px}
+.section{padding:35px 0}
+.card{background:var(--light);padding:20px;border-radius:10px}
+.highlight{background:var(--light-blue);padding:20px;border-left:5px solid var(--navy)}
+.note{background:var(--light);padding:16px;border-left:4px solid var(--navy-2);border-radius:8px}
+.cta a{display:inline-block;margin:10px 10px 0 0;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600}
 .primary{background:#fff;color:#0b1f3a}
 .secondary{border:1px solid #fff;color:#fff}
 
-.quote-block{
-  margin-top:18px;
-  padding:16px 18px;
+.quote{
+  margin-top:20px;
+  padding:18px;
   background:rgba(255,255,255,.08);
-  border-left:4px solid #ffffff;
+  border-left:4px solid #fff;
   border-radius:8px;
+  font-style:italic;
   max-width:650px;
 }
-.quote-text{
-  font-style:italic;
-  font-size:14px;
-  color:#e6f0fa;
-  margin:0;
-}
-.quote-source{
-  font-size:12px;
-  color:#b8c7da;
-  margin-top:5px;
-}
 
-.section{padding:35px 0}
-h2{border-bottom:2px solid var(--navy-2);display:inline-block;margin-bottom:12px}
-.highlight{background:var(--light-blue);padding:18px;border-left:5px solid var(--navy-2)}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.card{background:var(--light);padding:18px;border-radius:10px}
-.note{background:var(--light);padding:14px;border-left:4px solid var(--navy-2)}
 
-.contact{background:var(--navy-2);color:#fff;padding:40px 0}
-.form{background:#fff;color:#000;padding:18px;border-radius:10px}
-input,textarea{width:100%;padding:9px;margin:7px 0;border:1px solid #ccc;border-radius:6px}
-button{background:#0b1f3a;color:#fff;padding:11px;border:none;border-radius:6px}
+.contact{background:#0b1f3a;color:#fff;padding:40px 0}
+.form{background:#fff;color:#000;padding:20px;border-radius:10px}
+input,textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px;box-sizing:border-box}
+button{background:#0b1f3a;color:#fff;padding:12px;border:none;border-radius:6px;cursor:pointer}
 
 @media(max-width:800px){.hero,.two-col{grid-template-columns:1fr}}
 </style>
@@ -71,43 +55,32 @@ button{background:#0b1f3a;color:#fff;padding:11px;border:none;border-radius:6px}
 <header>
 <div class="container">
 
-<div class="topline">Hospital Operations • CMS • Joint Commission • Patient Safety</div>
+<p style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#cbd6e2;">
+Hospital Operations • CMS Compliance • Joint Commission • Patient Safety
+</p>
 
-<div class="brand">
-<img src="logo.png" class="logo">
-<div>
 <h1>Ron Norris, DHA, FACHE, CPPS, MBA, MHSM</h1>
-<p class="subtitle">Hospital Administration Expert Witness</p>
-
-<div class="metrics">
-<div><strong>25+</strong><br>Years Healthcare</div>
-<div><strong>15</strong><br>Years Executive Leadership</div>
-<div><strong>Multi-Setting</strong><br>Academic • LTAC • IRF • Behavioral • Community</div>
-<div><strong>Regulatory</strong><br>CMS & Joint Commission</div>
-</div>
-
-</div>
-</div>
+<p>Hospital Administration Expert Witness</p>
 
 <div class="hero">
-<img src="headshot.png">
+<img src="headshot.png" alt="Headshot of Ron Norris">
 
 <div>
 
-<div class="case-box">
-Dr. Norris evaluates whether hospital actions, systems, and leadership decisions were reasonable under the circumstances, consistent with regulatory expectations, and aligned with how hospitals function in real-world conditions.
-</div>
-
 <p>
-Hospital administration expert witness providing defensible opinions grounded in real-world operations, regulatory standards, and the practical constraints under which care is delivered.
+Dr. Norris evaluates whether hospital actions, systems, and leadership decisions were reasonable, consistent with regulatory expectations, and aligned with how hospitals actually function under real-world operational conditions.
 </p>
 
 <p>
-With more than 25 years of healthcare experience, including 15 years in executive leadership roles across academic medical centers, behavioral health, inpatient rehabilitation hospitals, long-term acute care hospitals, and community hospital settings.
+Hospital administration expert witness providing defensible opinions grounded in real-world hospital operations, regulatory standards, and the practical constraints under which care is delivered.
 </p>
 
 <p>
-His work focuses on evaluating decision-making, escalation, staffing, communication, and system performance based on what was known at the time.
+With more than 25 years of healthcare experience, including 15 years in executive leadership roles across academic medical centers, behavioral health, inpatient rehabilitation hospitals, long-term acute care hospitals, and community hospital settings, Dr. Norris analyzes whether hospital operations, system performance, and leadership decisions met accepted standards of care.
+</p>
+
+<p>
+He has been retained in 15+ cases involving wrongful death, regulatory compliance, patient safety events, and operational failures, providing clear, defensible opinions that place hospital actions in the full context of policy, staffing, escalation pathways, and system design.
 </p>
 
 <div class="cta">
@@ -115,11 +88,10 @@ His work focuses on evaluating decision-making, escalation, staffing, communicat
 <a href="#contact" class="secondary">Request CV</a>
 </div>
 
-<div class="quote-block">
-<p class="quote-text">
+<div class="quote">
 “Clear, credible, and grounded in real hospital operations. Dr. Norris brings a level of practical insight that strengthens case strategy from the outset.”
-</p>
-<p class="quote-source">— Healthcare Litigation Counsel</p>
+<br><br>
+— Healthcare Litigation Counsel
 </div>
 
 </div>
@@ -141,15 +113,20 @@ Hospital administration expert witness focused on reasonableness, regulatory exp
 <h2>About Dr. Norris</h2>
 
 <p>
-Dr. Norris is a hospital administration expert witness with more than 25 years of experience and 15 years in executive leadership across academic medical centers, inpatient rehabilitation hospitals, long-term acute care hospitals, behavioral health, and community hospitals.
+Dr. Norris is a hospital administration expert witness with more than 25 years of healthcare experience and 15 years in executive leadership across academic medical centers, inpatient rehabilitation hospitals, long-term acute care hospitals, behavioral health, and community hospitals.
 </p>
 
 <p>
 His work focuses on evaluating whether hospital operations and leadership decisions were reasonable under the circumstances and consistent with accepted standards of care.
 </p>
 
+<p>
+Rather than relying on hindsight, he evaluates cases within real-world operational constraints including staffing, escalation structures, and system limitations.
+</p>
+
 <div class="note">
-<strong>Curriculum vitae and case history available upon request.</strong>
+<strong>Comprehensive curriculum vitae, testimony history, and representative engagements are available upon request for counsel.</strong><br><br>
+Formal engagements typically begin with a preliminary case inquiry and conflict review.
 </div>
 
 </div>
@@ -161,11 +138,13 @@ His work focuses on evaluating whether hospital operations and leadership decisi
 
 <div class="highlight">
 <ul>
-<li><strong>Reasonableness:</strong> Evaluates actions based on real-time conditions</li>
-<li><strong>Operational Insight:</strong> Explains how hospitals actually function</li>
-<li><strong>Regulatory Context:</strong> CMS and Joint Commission applied appropriately</li>
-<li><strong>System Analysis:</strong> Leadership and escalation evaluation</li>
-<li><strong>Defensible Opinions:</strong> Clear, credible testimony</li>
+<li><strong>Reasonableness Under the Circumstances:</strong> Evaluates hospital actions in the context of available information, operational demands, staffing conditions, escalation structures, and institutional constraints present at the time.</li>
+<li><strong>Operational Reality:</strong> Translates policies, staffing models, administrative decision-making, and patient flow pressures into clear, defensible opinions grounded in how hospitals actually operate.</li>
+<li><strong>Regulatory Context:</strong> Applies CMS Conditions of Participation and Joint Commission standards in a practical way, distinguishing regulatory expectations from hindsight-driven criticism.</li>
+<li><strong>System and Leadership Analysis:</strong> Assesses whether hospital systems, communication pathways, escalation processes, and leadership decisions were appropriate and supportable under the circumstances.</li>
+<li><strong>Documentation &amp; Record Review:</strong> Reviews medical records, policies, event reporting, and administrative documentation for consistency, completeness, and alignment with operational practice.</li>
+<li><strong>Clear, Defensible Opinions:</strong> Delivers concise reports and testimony that place hospital actions in proper context and hold under deposition and trial scrutiny.</li>
+<li><strong>Credibility:</strong> 25 years in healthcare, including 15 years in executive leadership across academic medical centers, behavioral health, inpatient rehabilitation hospitals, long-term acute care hospitals, and community hospital settings.</li>
 </ul>
 </div>
 
@@ -176,11 +155,18 @@ His work focuses on evaluating whether hospital operations and leadership decisi
 <div class="container two-col">
 
 <div>
-<h2>Standard of Care</h2>
+<h2>Standard of Care &amp; Operational Analysis</h2>
+
+<p>
+Dr. Norris evaluates whether hospital operations, leadership decisions, and system performance met accepted standards of care, regulatory requirements, and what a reasonable hospital would have done under similar circumstances.
+</p>
+
 <ul>
-<li>Hospital administration standard of care analysis</li>
-<li>CMS and Joint Commission compliance</li>
-<li>Operational and leadership evaluation</li>
+<li>Standard of care analysis for hospital administration and operations</li>
+<li>Evaluation of leadership decisions, escalation pathways, and system performance</li>
+<li>Assessment of compliance with CMS Conditions of Participation and Joint Commission standards</li>
+<li>Analysis of causation, preventability, and operational context</li>
+<li>Medical record, policy, and hospital documentation review</li>
 </ul>
 </div>
 
@@ -188,10 +174,11 @@ His work focuses on evaluating whether hospital operations and leadership decisi
 <h2>Litigation Support</h2>
 <div class="card">
 <ul>
-<li>Case review</li>
-<li>Expert reports</li>
-<li>Depositions</li>
-<li>Trial testimony</li>
+<li>Case review and merit evaluation</li>
+<li>Expert reports and affidavits</li>
+<li>Depositions and trial testimony</li>
+<li>Rebuttal reports and opposing expert review</li>
+<li>Case strategy support through operational insight</li>
 </ul>
 </div>
 </div>
@@ -201,24 +188,45 @@ His work focuses on evaluating whether hospital operations and leadership decisi
 
 <section class="section">
 <div class="container">
-<h2>Representative Matters</h2>
+<h2>Representative Engagements</h2>
 
 <div class="card">
-<p>
-Dr. Norris has been engaged in matters involving hospital negligence, wrongful death, patient safety events, regulatory compliance, escalation failures, and system-level operational issues.
-</p>
-
 <ul>
-<li>Hospital operational failures and leadership decision-making</li>
-<li>Patient safety and escalation issues</li>
-<li>CMS and Joint Commission compliance</li>
-<li>Staffing and communication failures</li>
-<li>Emergency department throughput issues</li>
+<li>Hospital wrongful death matters involving escalation of care, system delays, and operational decision-making</li>
+<li>Cases involving alleged failures in patient monitoring, communication, and leadership oversight</li>
+<li>Regulatory and accreditation-related matters involving CMS Conditions of Participation and Joint Commission standards</li>
+<li>Emergency department and throughput cases involving delays in placement, handoff, and response</li>
+<li>Patient safety events involving policy adherence, staffing, supervision, and system breakdowns</li>
 </ul>
 
 <p style="margin-top:10px;">
-Representative matters provided in summary form to preserve confidentiality. Additional materials available upon request.
+Representative engagements are provided in summary form to protect confidentiality and reflect the range of matters reviewed.
 </p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2>Engagement Process</h2>
+
+<div class="two-col">
+<div>
+<ul>
+<li>Initial case inquiry and conflict screening</li>
+<li>Preliminary review of case type and issues presented</li>
+<li>Discussion of scope, timing, and engagement needs</li>
+<li>Formal engagement following mutually accepted terms</li>
+</ul>
+</div>
+
+<div>
+<div class="note">
+<strong>Engagement Note:</strong><br><br>
+Detailed CV materials, representative engagement history, and further case discussion are available upon request for counsel. Formal review begins after intake and engagement confirmation.
+</div>
+</div>
 </div>
 
 </div>
@@ -232,16 +240,21 @@ Representative matters provided in summary form to preserve confidentiality. Add
 <p>Email: RNorris@NorrisHCC.com</p>
 <p>Phone: 972-489-9227</p>
 <p>Rockwall, Texas</p>
+<p><strong>Available for rapid case review within 48 hours</strong></p>
+<p>Please use the inquiry form to request a CV, discuss a potential matter, or initiate a case review.</p>
 </div>
 
 <div class="form">
 <h2>Case Inquiry</h2>
 <form action="https://formspree.io/f/xbdqozqn" method="POST">
 <input type="text" name="name" placeholder="Attorney Name" required>
+<input type="text" name="firm" placeholder="Law Firm">
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Case details"></textarea>
-<button type="submit">Submit</button>
+<input type="text" name="phone" placeholder="Phone">
+<textarea name="message" placeholder="Brief case description"></textarea>
+<button type="submit">Submit Inquiry</button>
 </form>
+<p style="margin-top:10px;font-size:14px;">For counsel only. CV materials and representative engagement information are available upon request.</p>
 </div>
 
 </div>
