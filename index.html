@@ -5,23 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ron Norris | Hospital Administration Expert Witness</title>
 
-<meta name="description" content="Hospital administration expert witness specializing in standard of care, CMS compliance, and operational analysis.">
-
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#1a1a1a}
-.container{width:90%;max-width:1100px;margin:auto}
-header{background:#0b1f3a;color:#fff;padding:30px 0}
-h1{margin:0}
-.hero{display:flex;gap:30px;align-items:center}
-.hero img{width:200px;border-radius:12px}
-.section{padding:40px 0}
-h2{border-bottom:2px solid #0b1f3a}
-.cta{background:#0b1f3a;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;margin-right:10px;display:inline-block}
-.highlight{background:#eef4fb;padding:20px;border-left:4px solid #0b1f3a}
-.contact{background:#0b1f3a;color:#fff;padding:40px 0}
-input,textarea{width:100%;padding:10px;margin:8px 0}
-button{background:#0b1f3a;color:#fff;padding:12px;border:none}
-.toggle button{margin-right:10px}
+:root{
+  --navy:#081a31;
+  --navy-2:#0b1f3a;
+  --blue:#12325b;
+  --light:#f7f9fc;
+  --light-blue:#eef4fb;
+  --text:#1a1a1a;
+}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.65}
+.container{width:90%;max-width:1120px;margin:auto}
+header{background:linear-gradient(135deg,var(--navy),var(--navy-2),var(--blue));color:#fff;padding:30px 0 60px}
+.topline{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c6dbef;margin-bottom:15px}
+.brand{display:flex;align-items:center;gap:15px}
+.logo{height:70px}
+h1{margin:0;font-size:34px}
+.subtitle{color:#dbe8f5;margin-top:4px}
+.hero{display:grid;grid-template-columns:220px 1fr;gap:30px;margin-top:20px}
+.hero img{width:220px;height:220px;border-radius:16px;object-fit:cover}
+.case-box{background:rgba(255,255,255,.1);padding:15px;border-left:4px solid #fff;margin-bottom:15px}
+.metrics{display:flex;flex-wrap:wrap;gap:25px;margin-top:12px;font-size:14px;color:#e3edf7}
+.cta a{display:inline-block;margin-right:10px;margin-top:10px;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600}
+.primary{background:#fff;color:#0b1f3a}
+.secondary{border:1px solid #fff;color:#fff}
+
+/* Quote Block */
+.quote-block{
+  margin-top:25px;
+  padding:18px 20px;
+  background:rgba(255,255,255,.08);
+  border-left:4px solid #ffffff;
+  border-radius:8px;
+  max-width:650px;
+}
+.quote-text{
+  font-style:italic;
+  font-size:15px;
+  color:#e6f0fa;
+  margin:0;
+}
+.quote-source{
+  font-size:13px;
+  color:#b8c7da;
+  margin-top:6px;
+}
+
+/* Sections */
+.section{padding:50px 0}
+h2{border-bottom:2px solid var(--navy-2);display:inline-block;margin-bottom:15px}
+.highlight{background:var(--light-blue);padding:20px;border-left:5px solid var(--navy-2)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.card{background:var(--light);padding:20px;border-radius:10px}
+.note{background:var(--light);padding:15px;border-left:4px solid var(--navy-2)}
+
+.contact{background:var(--navy-2);color:#fff;padding:50px 0}
+.form{background:#fff;color:#000;padding:20px;border-radius:10px}
+input,textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
+button{background:#0b1f3a;color:#fff;padding:12px;border:none;border-radius:6px}
+
+@media(max-width:800px){.hero,.two-col{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -30,19 +73,56 @@ button{background:#0b1f3a;color:#fff;padding:12px;border:none}
 <header>
 <div class="container">
 
+<div class="topline">Hospital Operations • CMS • Joint Commission • Patient Safety</div>
+
+<div class="brand">
+<img src="logo.png" class="logo">
+<div>
 <h1>Ron Norris, DHA, FACHE, CPPS, MBA, MHSM</h1>
-<p>Hospital Administration Expert Witness</p>
+<p class="subtitle">Hospital Administration Expert Witness</p>
+
+<div class="metrics">
+<div><strong>25+</strong><br>Years Healthcare</div>
+<div><strong>15</strong><br>Years Executive Leadership</div>
+<div><strong>Multi-Setting</strong><br>Academic • LTAC • IRF • Behavioral • Community</div>
+<div><strong>Regulatory</strong><br>CMS & Joint Commission</div>
+</div>
+
+</div>
+</div>
 
 <div class="hero">
 <img src="headshot.png">
 
 <div>
+
+<div class="case-box">
+Dr. Norris evaluates whether hospital actions, systems, and leadership decisions were reasonable under the circumstances, consistent with regulatory expectations, and aligned with how hospitals actually function in real-world conditions.
+</div>
+
 <p>
-Hospital administration expert witness providing defensible opinions grounded in real-world hospital operations, regulatory standards, and the practical constraints under which care is delivered.
+Hospital administration expert witness providing defensible opinions grounded in real-world operations, regulatory standards, and the practical constraints under which care is delivered.
 </p>
 
-<a href="#contact" class="cta">Request Case Review</a>
-<a href="#contact" class="cta">Request CV</a>
+<p>
+With more than 25 years of healthcare experience, including 15 years in executive leadership roles across academic medical centers, behavioral health, inpatient rehabilitation hospitals, long-term acute care hospitals, and community hospital settings.
+</p>
+
+<p>
+His work focuses on evaluating decision-making, escalation, staffing, communication, and system performance based on what was known at the time—not hindsight.
+</p>
+
+<div class="cta">
+<a href="#contact" class="primary">Request Case Review</a>
+<a href="#contact" class="secondary">Request CV</a>
+</div>
+
+<div class="quote-block">
+<p class="quote-text">
+“Clear, credible, and grounded in real hospital operations. Dr. Norris brings a level of practical insight that strengthens case strategy from the outset.”
+</p>
+<p class="quote-source">— Healthcare Litigation Counsel</p>
+</div>
 
 </div>
 </div>
@@ -52,123 +132,133 @@ Hospital administration expert witness providing defensible opinions grounded in
 
 <section class="section">
 <div class="container">
-
-<div class="toggle">
-<strong>View:</strong>
-<button onclick="setView('neutral')">Neutral</button>
-<button onclick="setView('defense')">Defense</button>
-<button onclick="setView('plaintiff')">Plaintiff</button>
-</div>
-
+<p style="font-size:20px;font-weight:600;">
+Defense-preferred hospital administration expert witness focused on reasonableness, regulatory expectations, and real-world hospital operations.
+</p>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-
 <h2>About Dr. Norris</h2>
 
 <p>
-25 years in healthcare including 15 years in executive leadership across academic medical centers, behavioral health, inpatient rehabilitation hospitals, long-term acute care hospitals, and community hospitals.
-</p>
-
-<p id="about">
-Evaluates whether hospital operations and leadership decisions were reasonable, consistent with regulatory expectations, and aligned with how hospitals function under real-world conditions.
+Dr. Norris is a hospital administration expert witness with more than 25 years of experience and 15 years in executive leadership across academic medical centers, inpatient rehabilitation hospitals, long-term acute care hospitals, behavioral health, and community hospitals.
 </p>
 
 <p>
-Applies CMS Conditions of Participation, Joint Commission standards, and operational best practices.
+His work focuses on evaluating whether hospital operations and leadership decisions were reasonable under the circumstances and consistent with accepted standards of care.
 </p>
 
-<p><strong>Curriculum vitae available upon request.</strong></p>
+<p>
+Rather than relying on hindsight, he evaluates cases within real-world operational constraints including staffing, escalation, and system limitations.
+</p>
 
-<a href="#contact" class="cta">Request CV</a>
+<div class="note">
+<strong>Curriculum vitae and case history available upon request.</strong>
+</div>
 
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-
-<h2>Why Attorneys Retain</h2>
-
-<p id="retain">
-Evaluates hospital operations, leadership decisions, and system performance against accepted standards of care.
-</p>
+<h2>Why Defense Attorneys Retain Dr. Norris</h2>
 
 <div class="highlight">
-<ul id="bullets">
-<li>Applies CMS and Joint Commission standards</li>
-<li>Explains real-world hospital operations</li>
-<li>Analyzes causation and outcomes</li>
-<li>Identifies documentation gaps</li>
-<li>Provides clear, defensible opinions</li>
+<ul>
+<li><strong>Reasonableness:</strong> Evaluates actions based on real-time conditions</li>
+<li><strong>Operational Insight:</strong> Explains how hospitals actually function</li>
+<li><strong>Regulatory Context:</strong> CMS and Joint Commission applied appropriately</li>
+<li><strong>System Analysis:</strong> Leadership and escalation evaluation</li>
+<li><strong>Documentation Review:</strong> Records and policies assessed for consistency</li>
+<li><strong>Defensible Opinions:</strong> Clear, credible testimony</li>
+<li><strong>Credibility:</strong> 25+ years experience, 15 years leadership</li>
 </ul>
 </div>
 
-<a href="#contact" class="cta">Request Case Review</a>
-
 </div>
 </section>
 
 <section class="section">
-<div class="container">
+<div class="container two-col">
 
+<div>
+<h2>Standard of Care</h2>
+<ul>
+<li>Hospital administration standard of care analysis</li>
+<li>CMS and Joint Commission compliance</li>
+<li>Operational and leadership evaluation</li>
+<li>Causation and preventability analysis</li>
+</ul>
+</div>
+
+<div>
 <h2>Litigation Support</h2>
-
+<div class="card">
 <ul>
 <li>Case review</li>
 <li>Expert reports</li>
 <li>Depositions</li>
 <li>Trial testimony</li>
+<li>Rebuttal review</li>
 </ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- NEW SECTION -->
+<section class="section">
+<div class="container">
+<h2>Representative Matters</h2>
+
+<div class="card">
+<p>
+Dr. Norris has been engaged in matters involving hospital negligence, wrongful death, patient safety events, regulatory compliance, escalation failures, communication breakdowns, and system-level operational issues.
+</p>
+
+<ul>
+<li>Hospital operational failures and leadership decision-making</li>
+<li>Patient safety events involving monitoring, escalation, and response</li>
+<li>CMS and Joint Commission compliance issues</li>
+<li>Staffing, supervision, and communication failures affecting care delivery</li>
+<li>Emergency department delays, patient flow, and throughput issues</li>
+<li>Administrative and system-level factors contributing to adverse outcomes</li>
+</ul>
+
+<p style="margin-top:14px;">
+Representative matters are provided in summary form to protect confidentiality. Additional experience and supporting materials are available upon request for counsel.
+</p>
+</div>
 
 </div>
 </section>
 
 <section class="contact" id="contact">
-<div class="container">
+<div class="container two-col">
 
+<div>
 <h2>Contact</h2>
-
 <p>Email: RNorris@NorrisHCC.com</p>
 <p>Phone: 972-489-9227</p>
+<p>Rockwall, Texas</p>
+<p><strong>Available for case review within 48 hours</strong></p>
+</div>
 
+<div class="form">
+<h2>Case Inquiry</h2>
 <form action="https://formspree.io/f/xbdqozqn" method="POST">
-<input type="text" name="name" placeholder="Name" required>
+<input type="text" name="name" placeholder="Attorney Name" required>
 <input type="email" name="email" placeholder="Email" required>
 <textarea name="message" placeholder="Case details"></textarea>
 <button type="submit">Submit</button>
 </form>
+</div>
 
 </div>
 </section>
-
-<script>
-function setView(type){
-const about = document.getElementById("about");
-const retain = document.getElementById("retain");
-const bullets = document.getElementById("bullets");
-
-if(type==="defense"){
-about.innerText="Evaluates hospital actions within real-world constraints including staffing, policy implementation, and system limitations to determine reasonableness.";
-retain.innerText="Focuses on whether hospital actions were reasonable under the circumstances.";
-bullets.innerHTML="<li>Explains operational constraints</li><li>Evaluates reasonableness</li><li>Contextualizes decisions</li>";
-}
-
-else if(type==="plaintiff"){
-about.innerText="Identifies breakdowns in hospital systems and deviations from standards of care contributing to harm.";
-retain.innerText="Focuses on failures in systems and standards.";
-bullets.innerHTML="<li>Identifies system failures</li><li>Links actions to harm</li><li>Highlights deviations</li>";
-}
-
-else{
-about.innerText="Evaluates whether hospital operations and leadership decisions were reasonable, consistent with regulatory expectations, and aligned with real-world conditions.";
-retain.innerText="Evaluates hospital operations against standards of care.";
-bullets.innerHTML="<li>Applies CMS and Joint Commission standards</li><li>Explains real-world operations</li><li>Analyzes causation</li><li>Reviews documentation</li><li>Provides defensible opinions</li>";
-}
-}
-</script>
 
 </body>
 </html>
