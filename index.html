@@ -15,153 +15,163 @@
   --light-blue:#eef4fb;
   --text:#1a1a1a;
   --muted:#5d6b7c;
-  --white:#ffffff;
+  --line:#dfe7f0;
 }
+
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   color:var(--text);
   background:#ffffff;
-  line-height:1.58;
+  line-height:1.5;
+  font-size:16px;
 }
+
 .container{
   width:90%;
   max-width:1100px;
   margin:auto;
 }
+
 header{
-  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 58%,var(--blue) 100%);
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,var(--blue) 100%);
   color:#fff;
-  padding:28px 0 44px 0;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  padding:24px 0 36px 0;
 }
+
 .topline{
   display:inline-block;
-  font-size:12px;
-  letter-spacing:1.6px;
+  font-size:11px;
+  letter-spacing:1.4px;
   text-transform:uppercase;
   font-weight:700;
   color:#c6dbef;
-  background:rgba(255,255,255,.08);
-  padding:8px 12px;
+  background:rgba(255,255,255,.07);
+  padding:7px 10px;
   border-radius:999px;
-  margin-bottom:16px;
+  margin-bottom:14px;
 }
+
 .brand-row{
   display:flex;
   align-items:center;
   gap:16px;
-  margin-bottom:14px;
 }
+
 .logo{
-  height:72px;
+  height:68px;
   width:auto;
-  display:block;
 }
+
 .name-block h1{
   margin:0;
-  font-size:36px;
-  line-height:1.08;
+  font-size:34px;
   font-weight:700;
+  letter-spacing:.2px;
+  line-height:1.05;
 }
+
 .subtitle{
-  margin:6px 0 0 0;
-  font-size:18px;
+  font-size:16px;
+  font-weight:600;
+  margin-top:6px;
   color:#dbe8f5;
 }
+
 .metrics{
   display:flex;
   flex-wrap:wrap;
-  gap:22px;
-  margin-top:10px;
+  gap:18px;
   font-size:13px;
+  margin-top:8px;
   color:#e3edf7;
 }
+
 .metrics strong{
-  font-size:17px;
-  display:block;
   color:#fff;
 }
+
 .hero{
   display:grid;
-  grid-template-columns:210px 1fr;
-  gap:26px;
-  align-items:center;
+  grid-template-columns:200px 1fr;
+  gap:24px;
   margin-top:18px;
+  align-items:center;
 }
+
 .hero img{
-  width:210px;
-  height:210px;
+  width:200px;
+  height:200px;
   object-fit:cover;
-  border-radius:16px;
-  background:#ddd;
-  border:4px solid rgba(255,255,255,.16);
-  box-shadow:0 10px 28px rgba(0,0,0,.18);
+  border-radius:12px;
+  border:3px solid rgba(255,255,255,.15);
 }
-.hero-copy{
-  max-width:760px;
-}
+
 .hero-copy p{
-  font-size:17px;
-  line-height:1.68;
-  margin:0 0 14px 0;
+  font-size:16px;
+  margin:0 0 12px 0;
   color:#f2f6fb;
 }
+
 .case-frame{
-  background:rgba(255,255,255,.09);
-  padding:14px 16px;
+  background:rgba(255,255,255,.08);
+  padding:12px;
   border-left:4px solid #fff;
-  border-radius:8px;
-  margin-bottom:16px;
+  border-radius:6px;
+  margin-bottom:12px;
 }
-.case-frame p{
-  margin:0;
-  font-size:15px;
-  font-weight:600;
-  color:#e6f0fa;
-}
+
 .cta-row{
   display:flex;
-  gap:12px;
   flex-wrap:wrap;
-  margin-top:14px;
+  gap:10px;
+  margin-top:12px;
 }
-.button,.button-outline{
+
+.button,
+.button-outline{
   display:inline-block;
-  padding:11px 16px;
-  border-radius:8px;
+  padding:10px 14px;
+  border-radius:6px;
   text-decoration:none;
   font-weight:700;
-  font-size:15px;
+  font-size:14px;
+  letter-spacing:.2px;
 }
+
 .button{
   background:#fff;
   color:var(--navy-2);
 }
+
 .button-outline{
   border:1px solid rgba(255,255,255,.35);
   color:#fff;
-  background:rgba(255,255,255,.06);
+  background:rgba(255,255,255,.05);
 }
+
 .quote-block{
-  margin-top:18px;
+  margin-top:12px;
   max-width:680px;
 }
+
 .quote-inner{
   background:rgba(255,255,255,.08);
   border-left:4px solid #fff;
-  padding:16px 18px;
-  border-radius:8px;
+  padding:14px 16px;
+  border-radius:6px;
 }
+
 .quote-text{
-  font-size:15px;
-  line-height:1.6;
-  margin:0 0 8px 0;
+  font-size:14px;
+  line-height:1.55;
+  margin:0 0 6px 0;
   color:#e6f0fa;
   font-style:italic;
 }
+
 .quote-source{
   margin:0;
   font-size:12px;
@@ -170,127 +180,161 @@ header{
   letter-spacing:.3px;
   text-transform:uppercase;
 }
+
 .section{
-  padding:28px 0;
+  padding:18px 0;
 }
+
 h2{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:.1px;
+  margin:0 0 10px 0;
   border-bottom:2px solid var(--navy-2);
   display:inline-block;
-  padding-bottom:6px;
-  margin:0 0 14px 0;
-  font-size:28px;
+  padding-bottom:4px;
 }
+
 p{
-  margin:0 0 14px 0;
+  margin:0 0 10px 0;
 }
+
 .lead{
-  font-size:19px;
+  font-size:18px;
   font-weight:700;
   color:var(--navy-2);
   margin:0;
+  line-height:1.45;
 }
+
 .two-col{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:24px;
 }
+
 .card{
   background:var(--light);
-  padding:18px;
-  border-radius:12px;
-  border:1px solid #edf2f7;
-  box-shadow:0 4px 16px rgba(16,24,40,.04);
+  padding:14px;
+  border-radius:8px;
+  border:1px solid #e6edf5;
+  box-shadow:none;
 }
+
 .highlight{
   background:var(--light-blue);
-  padding:18px;
-  border-left:5px solid var(--navy-2);
-  border-radius:8px;
+  padding:14px;
+  border-left:4px solid var(--navy-2);
+  border-radius:6px;
 }
+
 .note-box{
   background:var(--light);
-  padding:16px;
+  padding:12px 14px;
   border-left:4px solid var(--navy-2);
-  border-radius:8px;
+  border-radius:6px;
 }
+
 ul{
-  padding-left:20px;
-  margin:0;
+  padding-left:18px;
+  margin:6px 0 0 0;
 }
+
 li{
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
+
 .contact{
   background:var(--navy-2);
   color:#fff;
-  padding:34px 0;
+  padding:30px 0;
 }
+
 .contact h2{
   border-bottom-color:#fff;
 }
+
 .contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:24px;
   align-items:start;
 }
+
 .contact a{
   color:#fff;
   text-decoration:none;
 }
+
 .form-card{
   background:#fff;
   color:var(--text);
-  padding:18px;
-  border-radius:12px;
-  box-shadow:0 6px 24px rgba(16,24,40,.08);
+  padding:16px;
+  border-radius:8px;
+  box-shadow:none;
+  border:1px solid var(--line);
 }
+
 input,textarea{
   width:100%;
-  padding:11px 12px;
-  margin:7px 0;
+  padding:10px;
+  margin:6px 0;
   border:1px solid #cfd7e3;
-  border-radius:8px;
+  border-radius:6px;
   font:inherit;
   box-sizing:border-box;
 }
+
 button{
   background:var(--navy-2);
   color:#fff;
-  padding:12px 14px;
+  padding:10px;
   border:none;
-  border-radius:8px;
-  cursor:pointer;
+  border-radius:6px;
   font-weight:700;
+  cursor:pointer;
 }
+
 .small-note{
   color:var(--muted);
   font-size:14px;
   margin-top:10px;
 }
+
 .response-note{
   margin-top:12px;
   color:#dbe8f5;
   font-size:16px;
   font-weight:700;
 }
+
 footer{
-  padding:16px 0 24px 0;
-  color:#6b7280;
-  font-size:14px;
   text-align:center;
+  padding:16px;
+  font-size:14px;
+  color:#6b7280;
 }
+
 @media(max-width:900px){
-  .hero,.two-col,.contact-grid{grid-template-columns:1fr}
-  .hero img{width:180px;height:180px}
-  .name-block h1{font-size:31px}
+  .hero,.two-col,.contact-grid{
+    grid-template-columns:1fr;
+  }
+  .hero img{
+    width:180px;
+    height:180px;
+  }
+  .name-block h1{
+    font-size:31px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="container">
+
     <div class="topline">Hospital Operations • CMS Compliance • Joint Commission • Patient Safety</div>
 
     <div class="brand-row">
@@ -300,10 +344,9 @@ footer{
         <p class="subtitle">Hospital Administration Expert Witness</p>
 
         <div class="metrics">
-          <div><strong>25+</strong>Years Healthcare</div>
-          <div><strong>15</strong>Years Executive Leadership</div>
-          <div><strong>Multi-Setting</strong>Academic • LTAC • IRF • Behavioral • Community</div>
-          <div><strong>Regulatory</strong>CMS & Joint Commission</div>
+          <div><strong>25+ Years Healthcare</strong></div>
+          <div><strong>15 Years Executive Leadership</strong></div>
+          <div><strong>Academic • LTAC • IRF • Behavioral • Community</strong></div>
         </div>
       </div>
     </div>
@@ -343,6 +386,7 @@ footer{
         </div>
       </div>
     </div>
+
   </div>
 </header>
 
@@ -375,8 +419,8 @@ footer{
         <li>Whether the outcome was preventable within those realities</li>
       </ul>
 
-      <p style="margin-top:12px;">
-        This framework allows opinions to be grounded in operational reality, rather than hindsight, and aligned with accepted standards of care and regulatory expectations.
+      <p style="margin-top:10px;">
+        This framework allows opinions to be grounded in operational reality rather than hindsight and aligned with accepted standards of care and regulatory expectations.
       </p>
     </div>
   </div>
@@ -419,7 +463,7 @@ footer{
         <li><strong>Operational Reality:</strong> Explains how policies, staffing models, administrative decision-making, and patient flow pressures operate in practice, not just on paper.</li>
         <li><strong>Regulatory Context:</strong> Applies CMS Conditions of Participation and Joint Commission standards in a practical way, distinguishing legitimate expectations from hindsight-driven criticism.</li>
         <li><strong>System and Leadership Analysis:</strong> Assesses whether communication pathways, escalation processes, and leadership decisions were appropriate and supportable under the circumstances.</li>
-        <li><strong>Documentation & Record Review:</strong> Reviews medical records, policies, event reporting, and administrative documentation for consistency, completeness, and alignment with operational practice.</li>
+        <li><strong>Documentation &amp; Record Review:</strong> Reviews medical records, policies, event reporting, and administrative documentation for consistency, completeness, and alignment with operational practice.</li>
         <li><strong>Clear, Defensible Opinions:</strong> Delivers concise reports and testimony that place hospital actions in proper context and hold under deposition and trial scrutiny.</li>
       </ul>
     </div>
@@ -494,7 +538,7 @@ footer{
           <li>Patient safety events involving policy adherence, staffing, supervision, and system breakdowns</li>
         </ul>
 
-        <p style="margin-top:14px;">
+        <p style="margin-top:10px;">
           Representative engagements are provided in summary form to protect confidentiality and reflect the range of matters reviewed.
         </p>
       </div>
@@ -511,7 +555,7 @@ footer{
           <li>Formal engagement following mutually accepted terms</li>
         </ul>
 
-        <div class="note-box" style="margin-top:16px;">
+        <div class="note-box" style="margin-top:12px;">
           <p style="margin-top:0;"><strong>Engagement Note:</strong></p>
           <p style="margin-bottom:0;">Detailed CV materials, representative engagement history, and further case discussion are available upon request for counsel. Formal review begins after intake and engagement confirmation.</p>
         </div>
